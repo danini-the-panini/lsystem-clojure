@@ -14,8 +14,9 @@ The example alphabet is `[:F :< :> :L :R]`. The keywords mean the following:
     :L Turn left
     :R Turn right
 
-The L-System rules are defined as P. You can redifine them. Try this, for example:
+The definitions of these can be changed in `simple.clj`, which contains the alphabet and each member's meaning.
 
+The L-System rules are defined as P. You can redifine them. Try this, for example:
 
     (def P {:F [:F :< :L :F :> :F :< :R :F :> :F]
             :L [:L :F]
