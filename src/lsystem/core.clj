@@ -4,7 +4,7 @@
     (if (empty? Z) Z
       (let [p (P (first Z))]
         (concat (or p [(first Z)])
-                (recur (rest Z) P))))))
+                (lsystem (rest Z) P))))))
 
 (defn nth-L [Z P i]
   (if (zero? i) (seq Z)
