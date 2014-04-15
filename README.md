@@ -4,11 +4,13 @@ Generate L-Systems, and Turtle-execute them
 
 ## To Use
 
+First, for obvious reasons, make sure you have `leiningen` installed.
+
 Run `lein repl`. Once the REPL is loaded, you can try the provided example with `(def Z (lsystem Z P))` to execute a step of the lsystem. A helper function, `nth-L` is provided to run an lsystem more than once in one go.
 
 The example alphabet is `[:F :< :> :L :R]`. The keywords mean the following:
 
-    :F move forward in the current direction, drawing a line
+    :F Move forward in the current direction, drawing a line
     :< Push state onto stack
     :> Pop state off stack and use as current state
     :L Turn left
